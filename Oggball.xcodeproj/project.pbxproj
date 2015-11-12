@@ -7,14 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		ADE9FF89863539D660E3E61B /* libPods-Oggball.a in Frameworks */ = {isa = PBXBuildFile; fileRef = ABF99B90E277ABC2DA8FF472 /* libPods-Oggball.a */; };
 		FAA9887D1BF40D7300111599 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA9887C1BF40D7300111599 /* AppDelegate.swift */; };
 		FAA9887F1BF40D7300111599 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA9887E1BF40D7300111599 /* ViewController.swift */; };
 		FAA988821BF40D7300111599 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FAA988801BF40D7300111599 /* Main.storyboard */; };
 		FAA988841BF40D7300111599 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FAA988831BF40D7300111599 /* Assets.xcassets */; };
 		FAA988871BF40D7300111599 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FAA988851BF40D7300111599 /* LaunchScreen.storyboard */; };
+		FAA9889F1BF4285200111599 /* libopus.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FAA9889E1BF4285200111599 /* libopus.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		076C2F270943A0C8A83D2BFB /* Pods-Oggball.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Oggball.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Oggball/Pods-Oggball.debug.xcconfig"; sourceTree = "<group>"; };
+		ABF99B90E277ABC2DA8FF472 /* libPods-Oggball.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Oggball.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FAA988791BF40D7300111599 /* Oggball.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Oggball.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FAA9887C1BF40D7300111599 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FAA9887E1BF40D7300111599 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +26,13 @@
 		FAA988831BF40D7300111599 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FAA988861BF40D7300111599 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FAA988881BF40D7300111599 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FAA9888E1BF4189000111599 /* Oggball-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Oggball-Bridging-Header.h"; sourceTree = "<group>"; };
+		FAA9889A1BF427FD00111599 /* opus.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = opus.h; sourceTree = "<group>"; };
+		FAA9889B1BF427FD00111599 /* opus_defines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = opus_defines.h; sourceTree = "<group>"; };
+		FAA9889C1BF427FD00111599 /* opus_multistream.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = opus_multistream.h; sourceTree = "<group>"; };
+		FAA9889D1BF427FD00111599 /* opus_types.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = opus_types.h; sourceTree = "<group>"; };
+		FAA9889E1BF4285200111599 /* libopus.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libopus.a; path = ../../lib/libopus.a; sourceTree = "<group>"; };
+		FB1E30C3A9C3BBDDC3AA9E27 /* Pods-Oggball.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Oggball.release.xcconfig"; path = "Pods/Target Support Files/Pods-Oggball/Pods-Oggball.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +40,38 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FAA9889F1BF4285200111599 /* libopus.a in Frameworks */,
+				ADE9FF89863539D660E3E61B /* libPods-Oggball.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		00DE77F5407A78EC5CA1A143 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				ABF99B90E277ABC2DA8FF472 /* libPods-Oggball.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BE754C0C8BFC61A141FE65C3 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				076C2F270943A0C8A83D2BFB /* Pods-Oggball.debug.xcconfig */,
+				FB1E30C3A9C3BBDDC3AA9E27 /* Pods-Oggball.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		FAA988701BF40D7300111599 = {
 			isa = PBXGroup;
 			children = (
 				FAA9887B1BF40D7300111599 /* Oggball */,
 				FAA9887A1BF40D7300111599 /* Products */,
+				BE754C0C8BFC61A141FE65C3 /* Pods */,
+				00DE77F5407A78EC5CA1A143 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -57,11 +89,26 @@
 				FAA9887C1BF40D7300111599 /* AppDelegate.swift */,
 				FAA9887E1BF40D7300111599 /* ViewController.swift */,
 				FAA988801BF40D7300111599 /* Main.storyboard */,
+				FAA988991BF427FD00111599 /* opus */,
 				FAA988831BF40D7300111599 /* Assets.xcassets */,
 				FAA988851BF40D7300111599 /* LaunchScreen.storyboard */,
 				FAA988881BF40D7300111599 /* Info.plist */,
+				FAA9888E1BF4189000111599 /* Oggball-Bridging-Header.h */,
 			);
 			path = Oggball;
+			sourceTree = "<group>";
+		};
+		FAA988991BF427FD00111599 /* opus */ = {
+			isa = PBXGroup;
+			children = (
+				FAA9889E1BF4285200111599 /* libopus.a */,
+				FAA9889A1BF427FD00111599 /* opus.h */,
+				FAA9889B1BF427FD00111599 /* opus_defines.h */,
+				FAA9889C1BF427FD00111599 /* opus_multistream.h */,
+				FAA9889D1BF427FD00111599 /* opus_types.h */,
+			);
+			name = opus;
+			path = ../../../../../../../../usr/local/include/opus;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +118,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = FAA9888B1BF40D7300111599 /* Build configuration list for PBXNativeTarget "Oggball" */;
 			buildPhases = (
+				70786D974F8E26FBDA0EA32B /* Check Pods Manifest.lock */,
 				FAA988751BF40D7300111599 /* Sources */,
 				FAA988761BF40D7300111599 /* Frameworks */,
 				FAA988771BF40D7300111599 /* Resources */,
+				D815A43A092200D27328A49F /* Embed Pods Frameworks */,
+				A0D1CFDB473742BAD267E3E9 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -129,6 +179,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		70786D974F8E26FBDA0EA32B /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		A0D1CFDB473742BAD267E3E9 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Oggball/Pods-Oggball-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D815A43A092200D27328A49F /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Oggball/Pods-Oggball-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		FAA988751BF40D7300111599 /* Sources */ = {
@@ -245,23 +343,54 @@
 		};
 		FAA9888C1BF40D7300111599 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 076C2F270943A0C8A83D2BFB /* Pods-Oggball.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"${PODS_ROOT}/Headers/Public\"",
+					"\"${PODS_ROOT}/Headers/Public/EZAudio\"",
+					"\"${PODS_ROOT}/Headers/Public/TPCircularBuffer\"",
+					/usr/local/include,
+				);
 				INFOPLIST_FILE = Oggball/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Oggball",
+					/usr/local/lib,
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.devxhkl.Oggball;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Oggball/Oggball-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
 		FAA9888D1BF40D7300111599 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FB1E30C3A9C3BBDDC3AA9E27 /* Pods-Oggball.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"${PODS_ROOT}/Headers/Public\"",
+					"\"${PODS_ROOT}/Headers/Public/EZAudio\"",
+					"\"${PODS_ROOT}/Headers/Public/TPCircularBuffer\"",
+					/usr/local/include,
+				);
 				INFOPLIST_FILE = Oggball/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Oggball",
+					/usr/local/lib,
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.devxhkl.Oggball;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Oggball/Oggball-Bridging-Header.h";
 			};
 			name = Release;
 		};
@@ -284,6 +413,7 @@
 				FAA9888D1BF40D7300111599 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
